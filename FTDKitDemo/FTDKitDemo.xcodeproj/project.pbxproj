@@ -1,0 +1,423 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		44ABE1CCE9C9D674D8E51D06 /* Pods_FTDKitDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8743E2F3CA65D26658519DD /* Pods_FTDKitDemo.framework */; };
+		8AFA6B391DF5531D009D0505 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFA6B381DF5531D009D0505 /* AppDelegate.swift */; };
+		8AFA6B3B1DF5531D009D0505 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFA6B3A1DF5531D009D0505 /* ViewController.swift */; };
+		8AFA6B3E1DF5531D009D0505 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AFA6B3C1DF5531D009D0505 /* Main.storyboard */; };
+		8AFA6B401DF5531D009D0505 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AFA6B3F1DF5531D009D0505 /* Assets.xcassets */; };
+		8AFA6B431DF5531D009D0505 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AFA6B411DF5531D009D0505 /* LaunchScreen.storyboard */; };
+		8AFA6B591DF55428009D0505 /* FTDCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFA6B561DF55428009D0505 /* FTDCollectionViewCell.swift */; };
+		8AFA6B5A1DF55428009D0505 /* FTDCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AFA6B571DF55428009D0505 /* FTDCollectionViewCell.xib */; };
+		8AFA6B5B1DF55428009D0505 /* FTDLoopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFA6B581DF55428009D0505 /* FTDLoopView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		55874929DEDBE7571106DB95 /* Pods-FTDKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FTDKitDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FTDKitDemo/Pods-FTDKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		8AFA6B351DF5531D009D0505 /* FTDKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FTDKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AFA6B381DF5531D009D0505 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8AFA6B3A1DF5531D009D0505 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8AFA6B3D1DF5531D009D0505 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8AFA6B3F1DF5531D009D0505 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8AFA6B421DF5531D009D0505 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8AFA6B441DF5531D009D0505 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AFA6B561DF55428009D0505 /* FTDCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTDCollectionViewCell.swift; sourceTree = "<group>"; };
+		8AFA6B571DF55428009D0505 /* FTDCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FTDCollectionViewCell.xib; sourceTree = "<group>"; };
+		8AFA6B581DF55428009D0505 /* FTDLoopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTDLoopView.swift; sourceTree = "<group>"; };
+		C8743E2F3CA65D26658519DD /* Pods_FTDKitDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FTDKitDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FABE5C9446147D9AC80954EC /* Pods-FTDKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FTDKitDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-FTDKitDemo/Pods-FTDKitDemo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8AFA6B321DF5531D009D0505 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44ABE1CCE9C9D674D8E51D06 /* Pods_FTDKitDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		053B50DB04595C3F63D95F9B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C8743E2F3CA65D26658519DD /* Pods_FTDKitDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8AFA6B2C1DF5531D009D0505 = {
+			isa = PBXGroup;
+			children = (
+				8AFA6B531DF55428009D0505 /* FTDKit */,
+				8AFA6B371DF5531D009D0505 /* FTDKitDemo */,
+				8AFA6B361DF5531D009D0505 /* Products */,
+				EDF451F73F6C2ECE8354CDA1 /* Pods */,
+				053B50DB04595C3F63D95F9B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8AFA6B361DF5531D009D0505 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8AFA6B351DF5531D009D0505 /* FTDKitDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8AFA6B371DF5531D009D0505 /* FTDKitDemo */ = {
+			isa = PBXGroup;
+			children = (
+				8AFA6B381DF5531D009D0505 /* AppDelegate.swift */,
+				8AFA6B3A1DF5531D009D0505 /* ViewController.swift */,
+				8AFA6B3C1DF5531D009D0505 /* Main.storyboard */,
+				8AFA6B3F1DF5531D009D0505 /* Assets.xcassets */,
+				8AFA6B411DF5531D009D0505 /* LaunchScreen.storyboard */,
+				8AFA6B441DF5531D009D0505 /* Info.plist */,
+			);
+			path = FTDKitDemo;
+			sourceTree = "<group>";
+		};
+		8AFA6B531DF55428009D0505 /* FTDKit */ = {
+			isa = PBXGroup;
+			children = (
+				8AFA6B541DF55428009D0505 /* UI */,
+			);
+			name = FTDKit;
+			path = ../FTDKit;
+			sourceTree = "<group>";
+		};
+		8AFA6B541DF55428009D0505 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8AFA6B551DF55428009D0505 /* FTDScrollView */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		8AFA6B551DF55428009D0505 /* FTDScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				8AFA6B561DF55428009D0505 /* FTDCollectionViewCell.swift */,
+				8AFA6B571DF55428009D0505 /* FTDCollectionViewCell.xib */,
+				8AFA6B581DF55428009D0505 /* FTDLoopView.swift */,
+			);
+			path = FTDScrollView;
+			sourceTree = "<group>";
+		};
+		EDF451F73F6C2ECE8354CDA1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				55874929DEDBE7571106DB95 /* Pods-FTDKitDemo.debug.xcconfig */,
+				FABE5C9446147D9AC80954EC /* Pods-FTDKitDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8AFA6B341DF5531D009D0505 /* FTDKitDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AFA6B471DF5531D009D0505 /* Build configuration list for PBXNativeTarget "FTDKitDemo" */;
+			buildPhases = (
+				2089CF103422A82DB685E4BF /* [CP] Check Pods Manifest.lock */,
+				8AFA6B311DF5531D009D0505 /* Sources */,
+				8AFA6B321DF5531D009D0505 /* Frameworks */,
+				8AFA6B331DF5531D009D0505 /* Resources */,
+				3A39D1BAFE2BC5D9AD424F13 /* [CP] Embed Pods Frameworks */,
+				4092A1E90879555E59FEDC09 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FTDKitDemo;
+			productName = FTDKitDemo;
+			productReference = 8AFA6B351DF5531D009D0505 /* FTDKitDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8AFA6B2D1DF5531D009D0505 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "盛世集团";
+				TargetAttributes = {
+					8AFA6B341DF5531D009D0505 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 8AFA6B301DF5531D009D0505 /* Build configuration list for PBXProject "FTDKitDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8AFA6B2C1DF5531D009D0505;
+			productRefGroup = 8AFA6B361DF5531D009D0505 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8AFA6B341DF5531D009D0505 /* FTDKitDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8AFA6B331DF5531D009D0505 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AFA6B431DF5531D009D0505 /* LaunchScreen.storyboard in Resources */,
+				8AFA6B401DF5531D009D0505 /* Assets.xcassets in Resources */,
+				8AFA6B3E1DF5531D009D0505 /* Main.storyboard in Resources */,
+				8AFA6B5A1DF55428009D0505 /* FTDCollectionViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2089CF103422A82DB685E4BF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3A39D1BAFE2BC5D9AD424F13 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FTDKitDemo/Pods-FTDKitDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4092A1E90879555E59FEDC09 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FTDKitDemo/Pods-FTDKitDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8AFA6B311DF5531D009D0505 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AFA6B3B1DF5531D009D0505 /* ViewController.swift in Sources */,
+				8AFA6B591DF55428009D0505 /* FTDCollectionViewCell.swift in Sources */,
+				8AFA6B391DF5531D009D0505 /* AppDelegate.swift in Sources */,
+				8AFA6B5B1DF55428009D0505 /* FTDLoopView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8AFA6B3C1DF5531D009D0505 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8AFA6B3D1DF5531D009D0505 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8AFA6B411DF5531D009D0505 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8AFA6B421DF5531D009D0505 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8AFA6B451DF5531D009D0505 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8AFA6B461DF5531D009D0505 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8AFA6B481DF5531D009D0505 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55874929DEDBE7571106DB95 /* Pods-FTDKitDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FTDKitDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ftd.FTDKitDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		8AFA6B491DF5531D009D0505 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FABE5C9446147D9AC80954EC /* Pods-FTDKitDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FTDKitDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ftd.FTDKitDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8AFA6B301DF5531D009D0505 /* Build configuration list for PBXProject "FTDKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AFA6B451DF5531D009D0505 /* Debug */,
+				8AFA6B461DF5531D009D0505 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8AFA6B471DF5531D009D0505 /* Build configuration list for PBXNativeTarget "FTDKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AFA6B481DF5531D009D0505 /* Debug */,
+				8AFA6B491DF5531D009D0505 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8AFA6B2D1DF5531D009D0505 /* Project object */;
+}
