@@ -3,7 +3,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "FTDKit"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "整理的小框架，装有一些常用的小功能"
   s.homepage     = "https://github.com/shengguoqiang/FTDKit"
   s.license      = "MIT"
@@ -18,6 +18,6 @@ Pod::Spec.new do |s|
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
   s.requires_arc = true
-  s.dependency "Kingfisher', '~> 3.1.4"
+  s.dependency 'Kingfisher', '~> 3.1.4'
 
 end
