@@ -11,7 +11,7 @@ import Kingfisher
 
 let cellIdentifier = "FTDCellIdentifier"
 
-protocol FTDLoopViewDelegate: class {
+public protocol FTDLoopViewDelegate: class {
     //cell点击监听
     func collectionViewDidSelected(index: Int)
     //cell滑动结束监听
@@ -30,7 +30,7 @@ public class FTDLoopView: UIView {
     weak var timer: Timer?
     
     //代理
-    weak var delegate: FTDLoopViewDelegate?
+    public weak var delegate: FTDLoopViewDelegate?
     
     //需要展示图片数量
     var totalShows: Int = 0

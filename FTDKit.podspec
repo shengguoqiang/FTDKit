@@ -3,7 +3,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "FTDKit"
-  s.version      = "0.0.6"
+  s.version      = "0.0.7"
   s.summary      = "整理的小框架，装有一些常用的小功能"
   s.homepage     = "https://github.com/shengguoqiang/FTDKit"
   s.license      = "MIT"
