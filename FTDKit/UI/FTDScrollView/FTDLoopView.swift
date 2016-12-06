@@ -99,7 +99,11 @@ public class FTDLoopView: UIView {
         self.collectionView = collectionView
         
         //注册cell
-        collectionView.register(UINib(nibName: "FTDCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: cellIdentifier)
+        let FTDLoopViewClass = NSClassFromString("FTDKit.FTDLoopView") as? FTDLoopView.Type
+        guard let ftdCla = FTDLoopViewClass else {
+             return
+        }
+        collectionView.register(UINib(nibName: "FTDCollectionViewCell", bundle: Bundle.init(for: ftdCla)), forCellWithReuseIdentifier: cellIdentifier)
     }
     
     required public init?(coder aDecoder: NSCoder) {
