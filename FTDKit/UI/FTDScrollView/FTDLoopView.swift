@@ -11,11 +11,11 @@ import Kingfisher
 
 let cellIdentifier = "FTDCellIdentifier"
 
-public protocol FTDLoopViewDelegate: class {
+protocol FTDLoopViewDelegate: class {
     //cell点击监听
-   public func collectionViewDidSelected(index: Int)
+    func collectionViewDidSelected(index: Int)
     //cell滑动结束监听
-   public func collectionViewDidEndDecelerating(index: Int)
+    func collectionViewDidEndDecelerating(index: Int)
 }
 
 public class FTDLoopView: UIView {
