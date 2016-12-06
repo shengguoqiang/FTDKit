@@ -9,6 +9,7 @@
 import UIKit
 import Kingfisher
 
+//cell复用标识
 let cellIdentifier = "FTDCellIdentifier"
 
 public protocol FTDLoopViewDelegate: class {
@@ -98,7 +99,7 @@ public class FTDLoopView: UIView {
         addSubview(collectionView)
         self.collectionView = collectionView
         
-        //注册cell
+        //注册cell（注意bundle的获取）
         let FTDLoopViewClass = NSClassFromString("FTDKit.FTDLoopView") as? FTDLoopView.Type
         guard let ftdCla = FTDLoopViewClass else {
              return

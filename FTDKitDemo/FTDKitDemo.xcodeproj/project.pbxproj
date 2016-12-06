@@ -7,117 +7,101 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		44ABE1CCE9C9D674D8E51D06 /* Pods_FTDKitDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8743E2F3CA65D26658519DD /* Pods_FTDKitDemo.framework */; };
-		8AFA6B391DF5531D009D0505 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFA6B381DF5531D009D0505 /* AppDelegate.swift */; };
-		8AFA6B3B1DF5531D009D0505 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFA6B3A1DF5531D009D0505 /* ViewController.swift */; };
-		8AFA6B3E1DF5531D009D0505 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AFA6B3C1DF5531D009D0505 /* Main.storyboard */; };
-		8AFA6B401DF5531D009D0505 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AFA6B3F1DF5531D009D0505 /* Assets.xcassets */; };
-		8AFA6B431DF5531D009D0505 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AFA6B411DF5531D009D0505 /* LaunchScreen.storyboard */; };
-		8AFA6B591DF55428009D0505 /* FTDCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFA6B561DF55428009D0505 /* FTDCollectionViewCell.swift */; };
-		8AFA6B5A1DF55428009D0505 /* FTDCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AFA6B571DF55428009D0505 /* FTDCollectionViewCell.xib */; };
-		8AFA6B5B1DF55428009D0505 /* FTDLoopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFA6B581DF55428009D0505 /* FTDLoopView.swift */; };
+		8A6823631DF6925C00123928 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6823621DF6925C00123928 /* AppDelegate.swift */; };
+		8A6823651DF6925C00123928 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6823641DF6925C00123928 /* ViewController.swift */; };
+		8A6823681DF6925C00123928 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A6823661DF6925C00123928 /* Main.storyboard */; };
+		8A68236A1DF6925C00123928 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A6823691DF6925C00123928 /* Assets.xcassets */; };
+		8A68236D1DF6925C00123928 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A68236B1DF6925C00123928 /* LaunchScreen.storyboard */; };
+		8A6823781DF6960900123928 /* FTDCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6823751DF6960900123928 /* FTDCollectionViewCell.swift */; };
+		8A6823791DF6960900123928 /* FTDCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A6823761DF6960900123928 /* FTDCollectionViewCell.xib */; };
+		8A68237A1DF6960900123928 /* FTDLoopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6823771DF6960900123928 /* FTDLoopView.swift */; };
+		F8694F24492540B062C741E6 /* Pods_FTDKitDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09F809BE15E768B5DFCF3C91 /* Pods_FTDKitDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		55874929DEDBE7571106DB95 /* Pods-FTDKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FTDKitDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FTDKitDemo/Pods-FTDKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		8AFA6B351DF5531D009D0505 /* FTDKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FTDKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8AFA6B381DF5531D009D0505 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8AFA6B3A1DF5531D009D0505 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8AFA6B3D1DF5531D009D0505 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8AFA6B3F1DF5531D009D0505 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8AFA6B421DF5531D009D0505 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8AFA6B441DF5531D009D0505 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8AFA6B561DF55428009D0505 /* FTDCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTDCollectionViewCell.swift; sourceTree = "<group>"; };
-		8AFA6B571DF55428009D0505 /* FTDCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FTDCollectionViewCell.xib; sourceTree = "<group>"; };
-		8AFA6B581DF55428009D0505 /* FTDLoopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTDLoopView.swift; sourceTree = "<group>"; };
-		C8743E2F3CA65D26658519DD /* Pods_FTDKitDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FTDKitDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FABE5C9446147D9AC80954EC /* Pods-FTDKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FTDKitDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-FTDKitDemo/Pods-FTDKitDemo.release.xcconfig"; sourceTree = "<group>"; };
+		09F809BE15E768B5DFCF3C91 /* Pods_FTDKitDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FTDKitDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A68235F1DF6925C00123928 /* FTDKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FTDKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A6823621DF6925C00123928 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8A6823641DF6925C00123928 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8A6823671DF6925C00123928 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8A6823691DF6925C00123928 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8A68236C1DF6925C00123928 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8A68236E1DF6925C00123928 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A6823751DF6960900123928 /* FTDCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTDCollectionViewCell.swift; sourceTree = "<group>"; };
+		8A6823761DF6960900123928 /* FTDCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FTDCollectionViewCell.xib; sourceTree = "<group>"; };
+		8A6823771DF6960900123928 /* FTDLoopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTDLoopView.swift; sourceTree = "<group>"; };
+		8C4D4B14BEB22E95AB51C17A /* Pods-FTDKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FTDKitDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FTDKitDemo/Pods-FTDKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		FC72E7D3576121F4384FAE2B /* Pods-FTDKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FTDKitDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-FTDKitDemo/Pods-FTDKitDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8AFA6B321DF5531D009D0505 /* Frameworks */ = {
+		8A68235C1DF6925C00123928 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44ABE1CCE9C9D674D8E51D06 /* Pods_FTDKitDemo.framework in Frameworks */,
+				F8694F24492540B062C741E6 /* Pods_FTDKitDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		053B50DB04595C3F63D95F9B /* Frameworks */ = {
+		18541005D2FAEEEC335BB6B6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C8743E2F3CA65D26658519DD /* Pods_FTDKitDemo.framework */,
+				09F809BE15E768B5DFCF3C91 /* Pods_FTDKitDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		8AFA6B2C1DF5531D009D0505 = {
+		8A6823561DF6925C00123928 = {
 			isa = PBXGroup;
 			children = (
-				8AFA6B531DF55428009D0505 /* FTDKit */,
-				8AFA6B371DF5531D009D0505 /* FTDKitDemo */,
-				8AFA6B361DF5531D009D0505 /* Products */,
-				EDF451F73F6C2ECE8354CDA1 /* Pods */,
-				053B50DB04595C3F63D95F9B /* Frameworks */,
+				8A6823611DF6925C00123928 /* FTDKitDemo */,
+				8A6823601DF6925C00123928 /* Products */,
+				DDC5555739B36D21806D88C7 /* Pods */,
+				18541005D2FAEEEC335BB6B6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		8AFA6B361DF5531D009D0505 /* Products */ = {
+		8A6823601DF6925C00123928 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8AFA6B351DF5531D009D0505 /* FTDKitDemo.app */,
+				8A68235F1DF6925C00123928 /* FTDKit.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8AFA6B371DF5531D009D0505 /* FTDKitDemo */ = {
+		8A6823611DF6925C00123928 /* FTDKitDemo */ = {
 			isa = PBXGroup;
 			children = (
-				8AFA6B381DF5531D009D0505 /* AppDelegate.swift */,
-				8AFA6B3A1DF5531D009D0505 /* ViewController.swift */,
-				8AFA6B3C1DF5531D009D0505 /* Main.storyboard */,
-				8AFA6B3F1DF5531D009D0505 /* Assets.xcassets */,
-				8AFA6B411DF5531D009D0505 /* LaunchScreen.storyboard */,
-				8AFA6B441DF5531D009D0505 /* Info.plist */,
+				8A6823741DF6960900123928 /* FTDScrollView */,
+				8A6823621DF6925C00123928 /* AppDelegate.swift */,
+				8A6823641DF6925C00123928 /* ViewController.swift */,
+				8A6823661DF6925C00123928 /* Main.storyboard */,
+				8A6823691DF6925C00123928 /* Assets.xcassets */,
+				8A68236B1DF6925C00123928 /* LaunchScreen.storyboard */,
+				8A68236E1DF6925C00123928 /* Info.plist */,
 			);
 			path = FTDKitDemo;
 			sourceTree = "<group>";
 		};
-		8AFA6B531DF55428009D0505 /* FTDKit */ = {
+		8A6823741DF6960900123928 /* FTDScrollView */ = {
 			isa = PBXGroup;
 			children = (
-				8AFA6B541DF55428009D0505 /* UI */,
+				8A6823751DF6960900123928 /* FTDCollectionViewCell.swift */,
+				8A6823761DF6960900123928 /* FTDCollectionViewCell.xib */,
+				8A6823771DF6960900123928 /* FTDLoopView.swift */,
 			);
-			name = FTDKit;
-			path = ../FTDKit;
+			name = FTDScrollView;
+			path = ../../FTDKit/UI/FTDScrollView;
 			sourceTree = "<group>";
 		};
-		8AFA6B541DF55428009D0505 /* UI */ = {
+		DDC5555739B36D21806D88C7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				8AFA6B551DF55428009D0505 /* FTDScrollView */,
-			);
-			path = UI;
-			sourceTree = "<group>";
-		};
-		8AFA6B551DF55428009D0505 /* FTDScrollView */ = {
-			isa = PBXGroup;
-			children = (
-				8AFA6B561DF55428009D0505 /* FTDCollectionViewCell.swift */,
-				8AFA6B571DF55428009D0505 /* FTDCollectionViewCell.xib */,
-				8AFA6B581DF55428009D0505 /* FTDLoopView.swift */,
-			);
-			path = FTDScrollView;
-			sourceTree = "<group>";
-		};
-		EDF451F73F6C2ECE8354CDA1 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				55874929DEDBE7571106DB95 /* Pods-FTDKitDemo.debug.xcconfig */,
-				FABE5C9446147D9AC80954EC /* Pods-FTDKitDemo.release.xcconfig */,
+				8C4D4B14BEB22E95AB51C17A /* Pods-FTDKitDemo.debug.xcconfig */,
+				FC72E7D3576121F4384FAE2B /* Pods-FTDKitDemo.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -125,16 +109,16 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8AFA6B341DF5531D009D0505 /* FTDKitDemo */ = {
+		8A68235E1DF6925C00123928 /* FTDKitDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8AFA6B471DF5531D009D0505 /* Build configuration list for PBXNativeTarget "FTDKitDemo" */;
+			buildConfigurationList = 8A6823711DF6925C00123928 /* Build configuration list for PBXNativeTarget "FTDKitDemo" */;
 			buildPhases = (
-				2089CF103422A82DB685E4BF /* [CP] Check Pods Manifest.lock */,
-				8AFA6B311DF5531D009D0505 /* Sources */,
-				8AFA6B321DF5531D009D0505 /* Frameworks */,
-				8AFA6B331DF5531D009D0505 /* Resources */,
-				3A39D1BAFE2BC5D9AD424F13 /* [CP] Embed Pods Frameworks */,
-				4092A1E90879555E59FEDC09 /* [CP] Copy Pods Resources */,
+				63814F6D849E18AC3DA4A272 /* [CP] Check Pods Manifest.lock */,
+				8A68235B1DF6925C00123928 /* Sources */,
+				8A68235C1DF6925C00123928 /* Frameworks */,
+				8A68235D1DF6925C00123928 /* Resources */,
+				7155E83BCE53E7F1C3383E4F /* [CP] Embed Pods Frameworks */,
+				A9672317FC3518AD803F709D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -142,26 +126,26 @@
 			);
 			name = FTDKitDemo;
 			productName = FTDKitDemo;
-			productReference = 8AFA6B351DF5531D009D0505 /* FTDKitDemo.app */;
+			productReference = 8A68235F1DF6925C00123928 /* FTDKit.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		8AFA6B2D1DF5531D009D0505 /* Project object */ = {
+		8A6823571DF6925C00123928 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "盛世集团";
 				TargetAttributes = {
-					8AFA6B341DF5531D009D0505 = {
+					8A68235E1DF6925C00123928 = {
 						CreatedOnToolsVersion = 8.1;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 8AFA6B301DF5531D009D0505 /* Build configuration list for PBXProject "FTDKitDemo" */;
+			buildConfigurationList = 8A68235A1DF6925C00123928 /* Build configuration list for PBXProject "FTDKitDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -169,32 +153,32 @@
 				en,
 				Base,
 			);
-			mainGroup = 8AFA6B2C1DF5531D009D0505;
-			productRefGroup = 8AFA6B361DF5531D009D0505 /* Products */;
+			mainGroup = 8A6823561DF6925C00123928;
+			productRefGroup = 8A6823601DF6925C00123928 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8AFA6B341DF5531D009D0505 /* FTDKitDemo */,
+				8A68235E1DF6925C00123928 /* FTDKitDemo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		8AFA6B331DF5531D009D0505 /* Resources */ = {
+		8A68235D1DF6925C00123928 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8AFA6B431DF5531D009D0505 /* LaunchScreen.storyboard in Resources */,
-				8AFA6B401DF5531D009D0505 /* Assets.xcassets in Resources */,
-				8AFA6B3E1DF5531D009D0505 /* Main.storyboard in Resources */,
-				8AFA6B5A1DF55428009D0505 /* FTDCollectionViewCell.xib in Resources */,
+				8A68236D1DF6925C00123928 /* LaunchScreen.storyboard in Resources */,
+				8A68236A1DF6925C00123928 /* Assets.xcassets in Resources */,
+				8A6823681DF6925C00123928 /* Main.storyboard in Resources */,
+				8A6823791DF6960900123928 /* FTDCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2089CF103422A82DB685E4BF /* [CP] Check Pods Manifest.lock */ = {
+		63814F6D849E18AC3DA4A272 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -209,7 +193,7 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		3A39D1BAFE2BC5D9AD424F13 /* [CP] Embed Pods Frameworks */ = {
+		7155E83BCE53E7F1C3383E4F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -224,7 +208,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FTDKitDemo/Pods-FTDKitDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		4092A1E90879555E59FEDC09 /* [CP] Copy Pods Resources */ = {
+		A9672317FC3518AD803F709D /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -242,32 +226,32 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8AFA6B311DF5531D009D0505 /* Sources */ = {
+		8A68235B1DF6925C00123928 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8AFA6B3B1DF5531D009D0505 /* ViewController.swift in Sources */,
-				8AFA6B591DF55428009D0505 /* FTDCollectionViewCell.swift in Sources */,
-				8AFA6B391DF5531D009D0505 /* AppDelegate.swift in Sources */,
-				8AFA6B5B1DF55428009D0505 /* FTDLoopView.swift in Sources */,
+				8A6823651DF6925C00123928 /* ViewController.swift in Sources */,
+				8A6823781DF6960900123928 /* FTDCollectionViewCell.swift in Sources */,
+				8A6823631DF6925C00123928 /* AppDelegate.swift in Sources */,
+				8A68237A1DF6960900123928 /* FTDLoopView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8AFA6B3C1DF5531D009D0505 /* Main.storyboard */ = {
+		8A6823661DF6925C00123928 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				8AFA6B3D1DF5531D009D0505 /* Base */,
+				8A6823671DF6925C00123928 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		8AFA6B411DF5531D009D0505 /* LaunchScreen.storyboard */ = {
+		8A68236B1DF6925C00123928 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				8AFA6B421DF5531D009D0505 /* Base */,
+				8A68236C1DF6925C00123928 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -275,7 +259,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		8AFA6B451DF5531D009D0505 /* Debug */ = {
+		8A68236F1DF6925C00123928 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -325,7 +309,7 @@
 			};
 			name = Debug;
 		};
-		8AFA6B461DF5531D009D0505 /* Release */ = {
+		8A6823701DF6925C00123928 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -368,30 +352,30 @@
 			};
 			name = Release;
 		};
-		8AFA6B481DF5531D009D0505 /* Debug */ = {
+		8A6823721DF6925C00123928 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 55874929DEDBE7571106DB95 /* Pods-FTDKitDemo.debug.xcconfig */;
+			baseConfigurationReference = 8C4D4B14BEB22E95AB51C17A /* Pods-FTDKitDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FTDKitDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ftd.FTDKitDemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = FTDKit;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		8AFA6B491DF5531D009D0505 /* Release */ = {
+		8A6823731DF6925C00123928 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FABE5C9446147D9AC80954EC /* Pods-FTDKitDemo.release.xcconfig */;
+			baseConfigurationReference = FC72E7D3576121F4384FAE2B /* Pods-FTDKitDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FTDKitDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ftd.FTDKitDemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = FTDKit;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -399,25 +383,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8AFA6B301DF5531D009D0505 /* Build configuration list for PBXProject "FTDKitDemo" */ = {
+		8A68235A1DF6925C00123928 /* Build configuration list for PBXProject "FTDKitDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8AFA6B451DF5531D009D0505 /* Debug */,
-				8AFA6B461DF5531D009D0505 /* Release */,
+				8A68236F1DF6925C00123928 /* Debug */,
+				8A6823701DF6925C00123928 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8AFA6B471DF5531D009D0505 /* Build configuration list for PBXNativeTarget "FTDKitDemo" */ = {
+		8A6823711DF6925C00123928 /* Build configuration list for PBXNativeTarget "FTDKitDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8AFA6B481DF5531D009D0505 /* Debug */,
-				8AFA6B491DF5531D009D0505 /* Release */,
+				8A6823721DF6925C00123928 /* Debug */,
+				8A6823731DF6925C00123928 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 8AFA6B2D1DF5531D009D0505 /* Project object */;
+	rootObject = 8A6823571DF6925C00123928 /* Project object */;
 }

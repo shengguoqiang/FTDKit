@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  FTDKitDemo
 //
-//  Created by shengguoqiang on 16/12/5.
+//  Created by shengguoqiang on 16/12/6.
 //  Copyright © 2016年 盛世集团. All rights reserved.
 //
 
