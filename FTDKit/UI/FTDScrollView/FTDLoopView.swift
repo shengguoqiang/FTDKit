@@ -11,11 +11,11 @@ import Kingfisher
 
 let cellIdentifier = "FTDCellIdentifier"
 
-protocol FTDLoopViewDelegate: class {
+public protocol FTDLoopViewDelegate: class {
     //cell点击监听
-    func collectionViewDidSelected(index: Int)
+   public func collectionViewDidSelected(index: Int)
     //cell滑动结束监听
-    func collectionViewDidEndDecelerating(index: Int)
+   public func collectionViewDidEndDecelerating(index: Int)
 }
 
 public class FTDLoopView: UIView {
@@ -102,7 +102,7 @@ public class FTDLoopView: UIView {
         collectionView.register(UINib(nibName: "FTDCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: cellIdentifier)
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
@@ -147,7 +147,7 @@ public class FTDLoopView: UIView {
     }
     
     //MARK: - 布局
-    override func layoutSubviews() {
+    override public func layoutSubviews() {
         super.layoutSubviews()
         //设置collectionView的Frame
         collectionView.frame = CGRect(x: 0, y: 0, width: bounds.width, height: bounds.height)
@@ -229,11 +229,11 @@ public class FTDLoopView: UIView {
 
 //MARK: - UICollectionViewDataSource, UICollectionViewDelegate
 extension FTDLoopView: UICollectionViewDataSource, UICollectionViewDelegate {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+   public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return totalShows
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+   public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as! FTDCollectionViewCell
         let index = indexPath.item % actualShows
         let source = sourceArray[index]
@@ -241,7 +241,7 @@ extension FTDLoopView: UICollectionViewDataSource, UICollectionViewDelegate {
         return cell
     }
     
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+   public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let index = indexPath.item % actualShows
         delegate?.collectionViewDidSelected(index: index)
     }
@@ -250,19 +250,19 @@ extension FTDLoopView: UICollectionViewDataSource, UICollectionViewDelegate {
 //MARK: - UIScrollViewDelegate
 extension FTDLoopView: UIScrollViewDelegate {
     
-    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+   public func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         if autoScroll {//关闭定时器
            finishRunLoop()
         }
     }
     
-    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+   public func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         if autoScroll {//启动定时器
             start()
         }
     }
     
-    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+   public func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         let index = (currentIndex() + 1) % actualShows
         delegate?.collectionViewDidEndDecelerating(index: index)
     }
