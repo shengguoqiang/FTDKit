@@ -18,7 +18,7 @@ protocol FTDLoopViewDelegate: class {
     func collectionViewDidEndDecelerating(index: Int)
 }
 
-class FTDLoopView: UIView {
+public class FTDLoopView: UIView {
     
     //collectionViewLayout
     var collectionViewLayout: UICollectionViewFlowLayout!
@@ -79,7 +79,7 @@ class FTDLoopView: UIView {
     }
     
     //MARK: - 初始化
-    override init(frame: CGRect) {
+    override public init(frame: CGRect) {
         super.init(frame: frame)
         
         //创建collectionViewLayout
@@ -119,7 +119,7 @@ class FTDLoopView: UIView {
      *  param scrollDirection  滚动方向
      *  param scrollPosition   偏移方向
      */
-    func config(infinite: Bool, autoScroll: Bool, timerInterval: TimeInterval, scrollDirection: UICollectionViewScrollDirection, scrollPosition: UICollectionViewScrollPosition, placeholderImage: UIImage?) {
+   public func config(infinite: Bool, autoScroll: Bool, timerInterval: TimeInterval, scrollDirection: UICollectionViewScrollDirection, scrollPosition: UICollectionViewScrollPosition, placeholderImage: UIImage?) {
         //是否无限循环
         self.infinite = infinite
         
@@ -141,7 +141,7 @@ class FTDLoopView: UIView {
     }
     
     //MARK: - 刷新滚动视图
-    func reloadLoopView(resource: [String]) {
+   public func reloadLoopView(resource: [String]) {
         //数据源
         sourceArray = resource
     }
