@@ -32,9 +32,11 @@ class ViewController: UIViewController {
 //MARK: - FTDLoopViewDelegate
 extension ViewController: FTDLoopViewDelegate {
     func collectionViewDidEndDecelerating(index: Int) {
+        print("currentIndex = \(index)")
     }
     
     func collectionViewDidSelected(index: Int) {
+        print("selectedIndex = \(index)")
     }
 }
 

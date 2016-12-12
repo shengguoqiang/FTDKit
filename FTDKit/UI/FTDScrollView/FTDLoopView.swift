@@ -35,14 +35,22 @@ public class FTDLoopView: UIView {
     
     //需要展示图片数量
     var totalShows: Int = 0
+    
     //实际图片数量
     var actualShows: Int = 0
     
     //是否无限循环,默认不无限循环
     var infinite: Bool = false
     
+    //是否在自动滚动中
+    var autoScrolling: Bool = false
+    
     //是否自动滚动,默认不自动滚动
-    var autoScroll: Bool = false
+    var autoScroll: Bool = false {
+        willSet {
+           autoScrolling = newValue
+        }
+    }
     
     //定时器间隔时间，默认2s
     var timerInterval: TimeInterval = 2
@@ -258,7 +266,15 @@ extension FTDLoopView: UIScrollViewDelegate {
    public func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         if autoScroll {//关闭定时器
            finishRunLoop()
+            //自动滑动过程中，手动拖拽时，修改状态，为了scrollViewDidEndDecelerating中计算准确的偏移量
+            autoScrolling = false
         }
+    }
+    
+    public func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        //cell滑动过程中，当前页面判断
+        let index = currentIndex() % actualShows
+        delegate?.collectionViewDidEndDecelerating(index: index)
     }
     
    public func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
@@ -268,7 +284,9 @@ extension FTDLoopView: UIScrollViewDelegate {
     }
     
    public func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        let index = (currentIndex() + 1) % actualShows
+       let index = autoScrolling ? (currentIndex() + 1) % actualShows : currentIndex() % actualShows
         delegate?.collectionViewDidEndDecelerating(index: index)
+       //页面滑动（无论是自动滑动还是手动拖拽）结束，修改状态
+       autoScrolling = autoScroll
     }
 }
