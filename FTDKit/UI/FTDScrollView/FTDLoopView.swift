@@ -1,10 +1,7 @@
-//
-//  FTDLoopView.swift
-//  Demo
-//
-//  Created by FTD on 16/12/1.
-//  Copyright © 2016年 江苏投吧金融信息服务有限公司. All rights reserved.
-//
+//1.创建FTDLoopView
+//2.配置参数config
+//3.设置代理
+//4.加载资源
 
 import UIKit
 import Kingfisher
