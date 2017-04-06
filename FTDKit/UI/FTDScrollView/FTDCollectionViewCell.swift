@@ -8,9 +8,8 @@
 
 import UIKit
 
-class FTDCollectionViewCell: UICollectionViewCell {
-    
-    @IBOutlet weak var imageView: UIImageView!
-    
-    
+public class FTDCollectionViewCell: UICollectionViewCell {
+    public func reloadData(_ bean: AnyObject) {
+        //子类实现
+    }
 }

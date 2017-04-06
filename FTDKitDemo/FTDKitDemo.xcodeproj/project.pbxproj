@@ -7,19 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B8C67AE1E95D48100116CBF /* MyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8C67AC1E95D48100116CBF /* MyCell.swift */; };
+		6B8C67AF1E95D48100116CBF /* MyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B8C67AD1E95D48100116CBF /* MyCell.xib */; };
+		6B8C67B21E95DD9300116CBF /* YourCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8C67B01E95DD9300116CBF /* YourCell.swift */; };
+		6B8C67B31E95DD9300116CBF /* YourCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B8C67B11E95DD9300116CBF /* YourCell.xib */; };
 		8A6823631DF6925C00123928 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6823621DF6925C00123928 /* AppDelegate.swift */; };
 		8A6823651DF6925C00123928 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6823641DF6925C00123928 /* ViewController.swift */; };
 		8A6823681DF6925C00123928 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A6823661DF6925C00123928 /* Main.storyboard */; };
 		8A68236A1DF6925C00123928 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A6823691DF6925C00123928 /* Assets.xcassets */; };
 		8A68236D1DF6925C00123928 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A68236B1DF6925C00123928 /* LaunchScreen.storyboard */; };
 		8A6823781DF6960900123928 /* FTDCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6823751DF6960900123928 /* FTDCollectionViewCell.swift */; };
-		8A6823791DF6960900123928 /* FTDCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A6823761DF6960900123928 /* FTDCollectionViewCell.xib */; };
 		8A68237A1DF6960900123928 /* FTDLoopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6823771DF6960900123928 /* FTDLoopView.swift */; };
 		F8694F24492540B062C741E6 /* Pods_FTDKitDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09F809BE15E768B5DFCF3C91 /* Pods_FTDKitDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		09F809BE15E768B5DFCF3C91 /* Pods_FTDKitDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FTDKitDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B8C67AC1E95D48100116CBF /* MyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCell.swift; sourceTree = "<group>"; };
+		6B8C67AD1E95D48100116CBF /* MyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCell.xib; sourceTree = "<group>"; };
+		6B8C67B01E95DD9300116CBF /* YourCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YourCell.swift; sourceTree = "<group>"; };
+		6B8C67B11E95DD9300116CBF /* YourCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YourCell.xib; sourceTree = "<group>"; };
 		8A68235F1DF6925C00123928 /* FTDKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FTDKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A6823621DF6925C00123928 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A6823641DF6925C00123928 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,7 +35,6 @@
 		8A68236C1DF6925C00123928 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A68236E1DF6925C00123928 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A6823751DF6960900123928 /* FTDCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTDCollectionViewCell.swift; sourceTree = "<group>"; };
-		8A6823761DF6960900123928 /* FTDCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FTDCollectionViewCell.xib; sourceTree = "<group>"; };
 		8A6823771DF6960900123928 /* FTDLoopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTDLoopView.swift; sourceTree = "<group>"; };
 		8C4D4B14BEB22E95AB51C17A /* Pods-FTDKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FTDKitDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FTDKitDemo/Pods-FTDKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		FC72E7D3576121F4384FAE2B /* Pods-FTDKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FTDKitDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-FTDKitDemo/Pods-FTDKitDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -78,6 +84,10 @@
 				8A6823741DF6960900123928 /* FTDScrollView */,
 				8A6823621DF6925C00123928 /* AppDelegate.swift */,
 				8A6823641DF6925C00123928 /* ViewController.swift */,
+				6B8C67B01E95DD9300116CBF /* YourCell.swift */,
+				6B8C67B11E95DD9300116CBF /* YourCell.xib */,
+				6B8C67AC1E95D48100116CBF /* MyCell.swift */,
+				6B8C67AD1E95D48100116CBF /* MyCell.xib */,
 				8A6823661DF6925C00123928 /* Main.storyboard */,
 				8A6823691DF6925C00123928 /* Assets.xcassets */,
 				8A68236B1DF6925C00123928 /* LaunchScreen.storyboard */,
@@ -90,7 +100,6 @@
 			isa = PBXGroup;
 			children = (
 				8A6823751DF6960900123928 /* FTDCollectionViewCell.swift */,
-				8A6823761DF6960900123928 /* FTDCollectionViewCell.xib */,
 				8A6823771DF6960900123928 /* FTDLoopView.swift */,
 			);
 			name = FTDScrollView;
@@ -169,9 +178,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A68236D1DF6925C00123928 /* LaunchScreen.storyboard in Resources */,
+				6B8C67B31E95DD9300116CBF /* YourCell.xib in Resources */,
+				6B8C67AF1E95D48100116CBF /* MyCell.xib in Resources */,
 				8A68236A1DF6925C00123928 /* Assets.xcassets in Resources */,
 				8A6823681DF6925C00123928 /* Main.storyboard in Resources */,
-				8A6823791DF6960900123928 /* FTDCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,8 +241,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A6823651DF6925C00123928 /* ViewController.swift in Sources */,
+				6B8C67AE1E95D48100116CBF /* MyCell.swift in Sources */,
 				8A6823781DF6960900123928 /* FTDCollectionViewCell.swift in Sources */,
 				8A6823631DF6925C00123928 /* AppDelegate.swift in Sources */,
+				6B8C67B21E95DD9300116CBF /* YourCell.swift in Sources */,
 				8A68237A1DF6960900123928 /* FTDLoopView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
