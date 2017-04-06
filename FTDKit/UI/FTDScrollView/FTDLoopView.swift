@@ -66,9 +66,6 @@ public class FTDLoopView: UIView {
     //cell重用标识符
     fileprivate var cellIdentifier: String!
     
-    //banner默认背景
-    fileprivate var placeholderImage: UIImage?
-    
     //图片url数组
     fileprivate var sourceArray = [AnyObject]() {
         didSet {
@@ -98,7 +95,6 @@ public class FTDLoopView: UIView {
      *  param scrollPosition   偏移方向
      *  param cellNibName      cellNibName
      *  param cellIdentifier   cell重用标识符
-     *  param placeholderImage cell默认背景
      */
     public func config(infinite: Bool,
                        autoScroll: Bool,
@@ -106,8 +102,7 @@ public class FTDLoopView: UIView {
                        scrollDirection: UICollectionViewScrollDirection,
                        scrollPosition: UICollectionViewScrollPosition,
                        cellNibName: String,
-                       cellIdentifier: String,
-                       placeholderImage: UIImage?) {
+                       cellIdentifier: String) {
         /**初始化**/
         setup()
         
@@ -132,9 +127,6 @@ public class FTDLoopView: UIView {
         
         //设置cell重用标识
         self.cellIdentifier = cellIdentifier
-        
-        //设置banner默认背景
-        self.placeholderImage = placeholderImage
         
         //注册cell
         collectionView.register(UINib(nibName: cellNibName, bundle: nil), forCellWithReuseIdentifier: cellIdentifier)

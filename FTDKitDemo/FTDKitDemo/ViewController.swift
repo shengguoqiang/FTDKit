@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         //1.创建view
         loopView = FTDLoopView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: view.bounds.width * 0.6))
         //2.配置参数
-        loopView.config(infinite: true, autoScroll: true, timerInterval: 2, scrollDirection: .horizontal, scrollPosition: .left, cellNibName: "MyCell", cellIdentifier: "MyCellId", placeholderImage: nil)
+        loopView.config(infinite: true, autoScroll: true, timerInterval: 2, scrollDirection: .horizontal, scrollPosition: .left, cellNibName: "MyCell", cellIdentifier: "MyCellId")
         view.addSubview(loopView)
         //3.设置代理
         loopView.delegate = self
@@ -38,7 +38,7 @@ class ViewController: UIViewController {
          *  nib
          */
         //1.配置参数
-        nibLoopView.config(infinite: true, autoScroll: true, timerInterval: 2, scrollDirection: .vertical, scrollPosition: .bottom, cellNibName: "YourCell", cellIdentifier: "YourCellId", placeholderImage: nil)
+        nibLoopView.config(infinite: true, autoScroll: true, timerInterval: 2, scrollDirection: .vertical, scrollPosition: .bottom, cellNibName: "YourCell", cellIdentifier: "YourCellId")
         //2.设置代理
         nibLoopView.delegate = self
         //3.加载资源
