@@ -189,6 +189,10 @@ public class FTDLoopView: UIView {
     //布局
     override public func layoutSubviews() {
         super.layoutSubviews()
+        //非空判断
+        guard collectionView != nil, collectionViewLayout != nil else {
+            return
+        }
         //设置collectionView的Frame
         collectionView.frame = CGRect(x: 0, y: 0, width: bounds.width, height: bounds.height)
         //设置itemSize
