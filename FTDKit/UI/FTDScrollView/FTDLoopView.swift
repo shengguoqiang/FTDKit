@@ -45,7 +45,7 @@ public class FTDLoopView: UIView {
     //是否自动滚动,默认不自动滚动
     fileprivate var autoScroll: Bool = false {
         willSet {
-           autoScrolling = newValue
+            autoScrolling = newValue
         }
     }
     
@@ -55,7 +55,7 @@ public class FTDLoopView: UIView {
     //滚动方向,默认横向
     private var scrollDirection: UICollectionViewScrollDirection = .horizontal {
         willSet {
-           collectionViewLayout.scrollDirection = newValue
+            collectionViewLayout.scrollDirection = newValue
         }
     }
     
@@ -135,7 +135,7 @@ public class FTDLoopView: UIView {
     }
     
     //刷新滚动视图
-   public func reloadLoopView(resource: [AnyObject]) {
+    public func reloadLoopView(resource: [AnyObject]) {
         //数据源
         sourceArray = resource
     }
@@ -234,7 +234,7 @@ public class FTDLoopView: UIView {
                 collectionView.scrollToItem(at: IndexPath(item: targetIndex, section: 0), at: scrollPosition, animated: true)
             }
         } else {//正常从中间往后偏移
-          collectionView.scrollToItem(at: IndexPath(item: targetIndex, section: 0), at: scrollPosition, animated: true)
+            collectionView.scrollToItem(at: IndexPath(item: targetIndex, section: 0), at: scrollPosition, animated: true)
         }
         
         scrollViewDidEndDecelerating(collectionView)
@@ -261,11 +261,11 @@ public class FTDLoopView: UIView {
 //MARK: - 代理事件
 //UICollectionViewDataSource, UICollectionViewDelegate
 extension FTDLoopView: UICollectionViewDataSource, UICollectionViewDelegate {
-   public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return totalShows
     }
     
-   public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as! FTDCollectionViewCell
         let index = indexPath.item % actualShows
         let source = sourceArray[index]
@@ -274,7 +274,7 @@ extension FTDLoopView: UICollectionViewDataSource, UICollectionViewDelegate {
         return cell
     }
     
-   public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let index = indexPath.item % actualShows
         delegate?.collectionViewDidSelected(index: index)
     }
@@ -283,9 +283,9 @@ extension FTDLoopView: UICollectionViewDataSource, UICollectionViewDelegate {
 //UIScrollViewDelegate
 extension FTDLoopView: UIScrollViewDelegate {
     
-   public func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+    public func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         if autoScroll {//关闭定时器
-           finishRunLoop()
+            finishRunLoop()
             //自动滑动过程中，手动拖拽时，修改状态，为了scrollViewDidEndDecelerating中计算准确的偏移量
             autoScrolling = false
         }
@@ -293,20 +293,26 @@ extension FTDLoopView: UIScrollViewDelegate {
     
     public func scrollViewDidScroll(_ scrollView: UIScrollView) {
         //cell滑动过程中，当前页面判断
+        guard actualShows > 0 else {
+            return
+        }
         let index = currentIndex() % actualShows
         delegate?.collectionViewDidEndDecelerating?(index: index)
     }
     
-   public func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+    public func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         if autoScroll {//启动定时器
             start()
         }
     }
     
-   public func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-       let index = autoScrolling ? (currentIndex() + 1) % actualShows : currentIndex() % actualShows
+    public func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        guard actualShows > 0 else {
+            return
+        }
+        let index = autoScrolling ? (currentIndex() + 1) % actualShows : currentIndex() % actualShows
         delegate?.collectionViewDidEndDecelerating?(index: index)
-       //页面滑动（无论是自动滑动还是手动拖拽）结束，修改状态
-       autoScrolling = autoScroll
+        //页面滑动（无论是自动滑动还是手动拖拽）结束，修改状态
+        autoScrolling = autoScroll
     }
 }
