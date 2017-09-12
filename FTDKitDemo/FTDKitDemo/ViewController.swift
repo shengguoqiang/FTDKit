@@ -46,7 +46,6 @@ class ViewController: UIViewController {
                                               "特别通知：您好，快来领奖吧！" as AnyObject,
                                               "对不起！奖已领！" as AnyObject])
         
-        
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
