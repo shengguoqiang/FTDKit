@@ -62,6 +62,9 @@ public class FTDLoopView: UIView {
     //偏移方向->横向：左右，纵向：上下
     private var scrollPosition: UICollectionViewScrollPosition = .left
     
+    //是否需要监听滚动视图滚到一半时，索引变化,默认需要监听
+    fileprivate var monitorIndexChanged: Bool = true
+    
     //cellNibName
     private var cellNibName: String!
     
@@ -88,15 +91,15 @@ public class FTDLoopView: UIView {
     }
     
     //MARK: - 公共方法
-    //配置参数
-    /**
-     *  param infinite         是否无限循环
-     *  param autoScroll       是否自动滚动
-     *  param timerInterval    定时器间隔
-     *  param scrollDirection  滚动方向
-     *  param scrollPosition   偏移方向
-     *  param cellNibName      cellNibName
-     *  param cellIdentifier   cell重用标识符
+    
+    /** 配置参数
+     *  @param infinite         是否无限循环
+     *  @param autoScroll       是否自动滚动
+     *  @param timerInterval    定时器间隔
+     *  @param scrollDirection  滚动方向
+     *  @param scrollPosition   偏移方向
+     *  @param cellNibName      cellNibName
+     *  @param cellIdentifier   cell重用标识符
      */
     public func config(infinite: Bool,
                        autoScroll: Bool,
@@ -134,10 +137,50 @@ public class FTDLoopView: UIView {
         collectionView.register(UINib(nibName: cellNibName, bundle: nil), forCellWithReuseIdentifier: cellIdentifier)
     }
     
-    //刷新滚动视图
+    /** 配置参数
+     *  @param infinite             是否无限循环
+     *  @param autoScroll           是否自动滚动
+     *  @param timerInterval        定时器间隔
+     *  @param scrollDirection      滚动方向
+     *  @param scrollPosition       偏移方向
+     *  @param monitorIndexChanged  是否需要监听滚动视图滚到一半时，索引变化
+     *  @param cellNibName          cellNibName
+     *  @param cellIdentifier       cell重用标识符
+     */
+    public func config(infinite: Bool,
+                       autoScroll: Bool,
+                       timerInterval: TimeInterval,
+                       scrollDirection: UICollectionViewScrollDirection,
+                       scrollPosition: UICollectionViewScrollPosition,
+                       monitorIndexChanged: Bool,
+                       cellNibName: String,
+                       cellIdentifier: String) {
+        //初始化设置
+        config(infinite: infinite, autoScroll: autoScroll, timerInterval: timerInterval, scrollDirection: scrollDirection, scrollPosition: scrollPosition, cellNibName: cellNibName, cellIdentifier: cellIdentifier)
+        
+        //监听滚动视图滚到一半时，索引变化
+        self.monitorIndexChanged = monitorIndexChanged
+    }
+    
+    /** 刷新滚动视图
+     *  @param resource 资源
+     */
     public func reloadLoopView(resource: [AnyObject]) {
         //数据源
         sourceArray = resource
+    }
+    
+    /** 滚动视图移至指定位置
+     *  @param item 指定位置坐标
+     */
+    public func scrollToItem(_ item: IndexPath) {
+        collectionView.scrollToItem(at: item, at: scrollPosition, animated: false)
+    }
+    
+    /** 刷新当前collectionViewCell
+     */
+    public func reloadcurrentItem() {
+        collectionView.reloadItems(at: [IndexPath(item: currentIndex(), section: 0)])
     }
     
     //开启定时器
@@ -179,7 +222,7 @@ public class FTDLoopView: UIView {
             collectionView.isPagingEnabled = true
             collectionView.delegate = self
             collectionView.dataSource = self
-            collectionView.backgroundColor = UIColor.white
+            collectionView.backgroundColor = UIColor.clear
             addSubview(collectionView)
             self.collectionView = collectionView
         }
@@ -293,6 +336,9 @@ extension FTDLoopView: UIScrollViewDelegate {
     
     public func scrollViewDidScroll(_ scrollView: UIScrollView) {
         //cell滑动过程中，当前页面判断
+        guard monitorIndexChanged else {//无需监听滚动一半时，索引变化
+            return
+        }
         guard actualShows > 0 else {
             return
         }
