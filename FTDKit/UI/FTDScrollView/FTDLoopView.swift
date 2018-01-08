@@ -9,15 +9,43 @@ import UIKit
 import Kingfisher
 
 @objc public protocol FTDLoopViewDelegate: class {
-    //cell点击监听
-    func collectionViewDidSelected(index: Int)
-    //cell滑动结束监听
+    /**cell点击监听*/
+    /**
+     *  @param index 当前索引
+     */
+    @objc optional func collectionViewDidSelected(index: Int)
+    
+    /**
+     *  @param instanceName 当前类实例的名称
+     *  @param index     当前索引
+     */
+    @objc optional func collectionViewDidSelected(instanceName: String?, index: Int)
+    
+    /**cell滑动结束监听*/
+    /**
+     *  @param index 当前索引
+     */
     @objc optional func collectionViewDidEndDecelerating(index: Int)
+    
+    /**
+     *  @param instanceName 当前类实例的名称
+     *  @param index     当前索引
+     */
+    @objc optional func collectionViewDidEndDecelerating(instanceName: String?, index: Int)
 }
 
 public class FTDLoopView: UIView {
     
+    //MARK: - 公共属性
+    //代理
+    public weak var delegate: FTDLoopViewDelegate?
+    
+    /******************************************************************/
+    
     //MARK: - 私有属性
+    //当前实例的名称-区分同一页面中多个FTDLoopView实例
+    fileprivate var instanceName: String?
+    
     //collectionViewLayout
     private var collectionViewLayout: UICollectionViewFlowLayout!
     
@@ -26,9 +54,6 @@ public class FTDLoopView: UIView {
     
     //timer
     private weak var timer: Timer?
-    
-    //代理
-    public weak var delegate: FTDLoopViewDelegate?
     
     //需要展示图片数量
     fileprivate var totalShows: Int = 0
@@ -89,6 +114,8 @@ public class FTDLoopView: UIView {
             }
         }
     }
+    
+    /******************************************************************/
     
     //MARK: - 公共方法
     
@@ -162,6 +189,31 @@ public class FTDLoopView: UIView {
         self.monitorIndexChanged = monitorIndexChanged
     }
     
+    /** 配置参数
+     *  @param infinite             是否无限循环
+     *  @param autoScroll           是否自动滚动
+     *  @param timerInterval        定时器间隔
+     *  @param scrollDirection      滚动方向
+     *  @param scrollPosition       偏移方向
+     *  @param instanceName         当前实例的名称-区分同一页面中多个FTDLoopView实例
+     *  @param cellNibName          cellNibName
+     *  @param cellIdentifier       cell重用标识符
+     */
+    public func config(infinite: Bool,
+                       autoScroll: Bool,
+                       timerInterval: TimeInterval,
+                       scrollDirection: UICollectionViewScrollDirection,
+                       scrollPosition: UICollectionViewScrollPosition,
+                       instanceName: String?,
+                       cellNibName: String,
+                       cellIdentifier: String) {
+        //初始化设置
+        config(infinite: infinite, autoScroll: autoScroll, timerInterval: timerInterval, scrollDirection: scrollDirection, scrollPosition: scrollPosition, cellNibName: cellNibName, cellIdentifier: cellIdentifier)
+        
+        //当前类实例名称
+        self.instanceName = instanceName
+    }
+    
     /** 刷新滚动视图
      *  @param resource 资源
      */
@@ -203,6 +255,8 @@ public class FTDLoopView: UIView {
         timer?.invalidate()
         timer = nil
     }
+    
+    /******************************************************************/
     
     //MARK: - 私有方法
     //初始化
@@ -319,7 +373,8 @@ extension FTDLoopView: UICollectionViewDataSource, UICollectionViewDelegate {
     
     public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let index = indexPath.item % actualShows
-        delegate?.collectionViewDidSelected(index: index)
+        delegate?.collectionViewDidSelected?(index: index)
+        delegate?.collectionViewDidSelected?(instanceName: instanceName, index: index)
     }
 }
 
@@ -344,6 +399,7 @@ extension FTDLoopView: UIScrollViewDelegate {
         }
         let index = currentIndex() % actualShows
         delegate?.collectionViewDidEndDecelerating?(index: index)
+        delegate?.collectionViewDidEndDecelerating?(instanceName: instanceName, index: index)
     }
     
     public func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
@@ -356,9 +412,13 @@ extension FTDLoopView: UIScrollViewDelegate {
         guard actualShows > 0 else {
             return
         }
-        let index = autoScrolling ? (currentIndex() + 1) % actualShows : currentIndex() % actualShows
-        delegate?.collectionViewDidEndDecelerating?(index: index)
+        if !monitorIndexChanged {//无需监听滚动一半时，索引变化
+            let index = autoScrolling ? (currentIndex() + 1) % actualShows : currentIndex() % actualShows
+            delegate?.collectionViewDidEndDecelerating?(index: index)
+            delegate?.collectionViewDidEndDecelerating?(instanceName: instanceName, index: index)
+        }
         //页面滑动（无论是自动滑动还是手动拖拽）结束，修改状态
         autoScrolling = autoScroll
     }
 }
+

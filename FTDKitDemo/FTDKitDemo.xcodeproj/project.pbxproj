@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6B7F7C651F67A9F3003F398D /* FTDUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7F7C641F67A9F3003F398D /* FTDUtil.swift */; };
 		6B8C67AE1E95D48100116CBF /* MyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8C67AC1E95D48100116CBF /* MyCell.swift */; };
 		6B8C67AF1E95D48100116CBF /* MyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B8C67AD1E95D48100116CBF /* MyCell.xib */; };
 		6B8C67B21E95DD9300116CBF /* YourCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8C67B01E95DD9300116CBF /* YourCell.swift */; };
@@ -24,7 +23,6 @@
 
 /* Begin PBXFileReference section */
 		09F809BE15E768B5DFCF3C91 /* Pods_FTDKitDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FTDKitDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6B7F7C641F67A9F3003F398D /* FTDUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTDUtil.swift; sourceTree = "<group>"; };
 		6B8C67AC1E95D48100116CBF /* MyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCell.swift; sourceTree = "<group>"; };
 		6B8C67AD1E95D48100116CBF /* MyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCell.xib; sourceTree = "<group>"; };
 		6B8C67B01E95DD9300116CBF /* YourCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YourCell.swift; sourceTree = "<group>"; };
@@ -62,15 +60,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		6B7F7C631F67A9F3003F398D /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				6B7F7C641F67A9F3003F398D /* FTDUtil.swift */,
-			);
-			name = Utils;
-			path = ../../FTDKit/Utils;
-			sourceTree = "<group>";
-		};
 		8A6823561DF6925C00123928 = {
 			isa = PBXGroup;
 			children = (
@@ -92,7 +81,6 @@
 		8A6823611DF6925C00123928 /* FTDKitDemo */ = {
 			isa = PBXGroup;
 			children = (
-				6B7F7C631F67A9F3003F398D /* Utils */,
 				8A6823741DF6960900123928 /* FTDScrollView */,
 				8A6823621DF6925C00123928 /* AppDelegate.swift */,
 				8A6823641DF6925C00123928 /* ViewController.swift */,
@@ -254,7 +242,6 @@
 			files = (
 				8A6823651DF6925C00123928 /* ViewController.swift in Sources */,
 				6B8C67AE1E95D48100116CBF /* MyCell.swift in Sources */,
-				6B7F7C651F67A9F3003F398D /* FTDUtil.swift in Sources */,
 				8A6823781DF6960900123928 /* FTDCollectionViewCell.swift in Sources */,
 				8A6823631DF6925C00123928 /* AppDelegate.swift in Sources */,
 				6B8C67B21E95DD9300116CBF /* YourCell.swift in Sources */,
